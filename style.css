@@ -926,9 +926,55 @@ section {
 }
 
 /* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .projects-container {
+
+  .hero {
+    min-height: auto;
+    padding: 100px 20px 60px;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;   /* 🔥 IMPORTANT */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .static_hero_text {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 15px 0;
+  }
+
+  .buttons {
+    display: flex;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mini-note {
+    font-size: 13px;
+    margin-top: 10px;
   }
 }
 
