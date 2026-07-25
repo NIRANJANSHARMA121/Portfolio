@@ -1151,7 +1151,7 @@ section {
 
   /* ===== DETAILS LIST (MAIN FIX) ===== */
   .project-details_media {
-    display: block;
+    display: none;
     max-height: none;
     overflow: visible;
   }
