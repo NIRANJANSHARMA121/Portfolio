@@ -24,6 +24,15 @@
   color: #4cafef;
 }
 
+.hamburger {
+  display: none;  /* ❌ hidden on desktop */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
 /* Links */
 .nav-links a {
   color: white;
@@ -987,11 +996,21 @@ section {
     padding: 12px 16px;
   }
 
+    .hamburger {
+    display: block;  /* ✅ show only here */
+    font-size: 28px;
+    cursor: pointer;
+  }
+
   .nav-links {
-    display: flex;
+    display: none;   /* hide menu */
     flex-direction: column;
-    gap: 10px;
+    width: 100%;
     margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;   /* show on click */
   }
 
   .nav-links a {
