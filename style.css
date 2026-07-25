@@ -1,6 +1,3 @@
-/* navbar css
-/* ===== NAVBAR ===== */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -17,7 +14,6 @@
   z-index: 1000;
 }
 
-/* Logo */
 .logo {
   font-size: 22px;
   font-weight: bold;
@@ -25,7 +21,7 @@
 }
 
 .hamburger {
-  display: none;  /* ❌ hidden on desktop */
+  display: none;  
 }
 
 .nav-links {
@@ -33,7 +29,6 @@
   gap: 20px;
 }
 
-/* Links */
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -42,14 +37,11 @@
   transition: 0.3s;
 }
 
-/* Hover effect */
 .nav-links a:hover {
   color: #4cafef;
   font-size: 23px;
 }
 
-
-/* hero */
 * {
   margin: 0px;
   padding: 0;
@@ -63,21 +55,14 @@ body {
 
 .hero {
   position: relative;
-
-  /* ✅ allow it to grow if content is big */
   min-height: 110vh;
   height: auto;
-
   display: flex;
   align-items: center;
-
-  /* ❗ IMPORTANT: remove cutting */
   overflow: visible;
-
-  padding: 120px 10% 80px; /* top space for navbar */
+  padding: 120px 10% 80px; 
 }
 
-/* Background */
 .hero .bg {
   position: absolute;
   width: 100%;
@@ -89,7 +74,6 @@ body {
   z-index: 0;
 }
 
-/* Content layout */
 .hero-container {
   position: relative;
   z-index: 1;
@@ -109,19 +93,16 @@ body {
   color: #fbfafa;
 }
 
-
-
 .content {
   width: 50%;
   color: white;
 }
 
-/* resume part */
 .mini-note {
   margin-top: 15px;
   font-size: 14px;
-  color: #ffffff; /* bright white */
-  background: rgba(0, 0, 0, 0.6); /* contrast */
+  color: #ffffff; 
+  background: rgba(0, 0, 0, 0.6); 
   padding: 6px 14px;
   border-radius: 20px;
   display: inline-block;
@@ -174,7 +155,6 @@ body {
   border: 1px solid #4cafef;
 }
 
-/* PROJECTS */
 .project {
   display: flex;
   align-items: center;
@@ -236,7 +216,6 @@ color :#4cafef ;
   border-radius: 20px;
 }
 
-/* SKILLS */
 .skills {
   padding: 80px 10%;
   text-align: center;
@@ -258,7 +237,6 @@ color :#4cafef ;
   border-radius: 10px;
 }
 
-/* CONTACT */
 .contact {
   padding: 80px 10%;
   text-align: center;
@@ -287,7 +265,6 @@ button {
   border-radius: 5px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .project {
     flex-direction: column;
@@ -298,11 +275,6 @@ button {
     flex-direction: column;
   }
 }
-
-/* projects */
-
-/* ===== Projects Section ===== */
-
 
 .projects {
   padding: 100px 10%;
@@ -318,30 +290,18 @@ button {
   margin-bottom: 80px;
 }
 
-
-
-/* ===== Project Card ===== */
-
 .project-card {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 60px;
   margin-bottom: 120px;
-
 }
-
-
-
-/* reverse layout */
 
 .project-card.reverse {
   flex-direction: row-reverse;
 }
 
-/* project ul part */
 ul {
   list-style: none;
   padding-left: 0;
@@ -359,57 +319,36 @@ ul li::before {
   left: 0;
 }
 
-
-/* ===== Image ===== */
-
 .project-image {
   flex: 1;
   text-align: center;
 }
 
-
 .project-image img {
-
   width: 280px;
   height: auto;
   max-height: 500px;
- 
   object-fit: cover;
-
   border-radius: 40px;
-
   border: 10px solid #111;
-
   box-shadow:
     inset 0 0 10px rgba(255,255,255,0.1),
     0 25px 50px rgba(0,0,0,0.6);
-
   transition: 0.4s;
 }
-
-
-
-
-/* hover effect */
 
 .project-image img:hover {
   transform: scale(1.05);
 }
 
-
-
-/* ===== Content ===== */
-
 .project-content {
   flex: 1;
 }
-
 
 .project-content h3 {
   font-size: 35px;
   margin-bottom: 20px;
 }
-
 
 .project-content p {
   color: #fdfcfc;
@@ -417,17 +356,12 @@ ul li::before {
   line-height: 1.6;
 }
 
-
-
-/* ===== Tech Tags ===== */
-
 .tech {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin: 25px 0;
 }
-
 
 .tech span {
   background: #1c1c1c;
@@ -437,11 +371,6 @@ ul li::before {
   font-size: 14px;
 }
 
-
-
-/* ===== Buttons ===== */
-
-/* Buttons */
 .buttons {
   display: flex;
   gap: 15px;
@@ -472,7 +401,6 @@ ul li::before {
   background: #4cafef;
 }
 
-/* Mini note */
 .mini-note {
   margin-top: 15px;
   font-size: 14px;
@@ -483,7 +411,6 @@ ul li::before {
   display: inline-block;
 }
 
-/* Resume link inside note */
 .mini-note a {
   color: #00c6ff;
   text-decoration: none;
@@ -498,8 +425,6 @@ ul li::before {
   display: flex;
   gap: 15px;
 }
-
-/* ===== Responsive ===== */
 
 @media (max-width: 768px) {
 
@@ -522,9 +447,6 @@ ul li::before {
 
 }
 
-/* skills */
-
-/* ===== Body Background ===== */
 
 body {
   margin: 0;
@@ -540,9 +462,6 @@ body {
   color: white;
 }
 
-
-/* ===== Skills Section ===== */
-
 .skills {
   padding: 100px 10%;
   text-align: center;
@@ -553,38 +472,27 @@ body {
   margin-bottom: 60px;
 }
 
-
-/* ===== Grid Layout ===== */
-
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-
-/* ===== Skill Card ===== */
-
 .skill-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-
   padding: 30px;
   border-radius: 20px;
-
   transition: 0.3s;
-
   border: 1px solid rgba(255,255,255,0.1);
 }
 
 .skill-card i {
-  font-size: 60px;   /* 🔥 increase size */
+  font-size: 60px;   
   color: #4cafef;
   margin-bottom: 20px;
   display: block;
 }
-
-/* Hover Effect */
 
 .skill-card:hover {
   transform: translateY(-10px);
@@ -595,9 +503,6 @@ body {
 .skill-card:hover p {
   color: #fff;
 }
-
-
-/* Text */
 
 .skill-card h3 {
   font-size: 22px;
@@ -618,18 +523,12 @@ body {
   line-height: 1.5;
 }
 
-
-/* ===== Responsive ===== */
-
 @media (max-width: 768px) {
   .skills h2 {
     font-size: 32px;
   }
 }
 
-/* contacts */
-
-/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -637,7 +536,6 @@ body {
 }
 
 
-/* ===== Body ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -650,16 +548,12 @@ section {
   padding: 100px 10%;
 }
 
-
-/* ===== Form Container ===== */
 .contact-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-
-/* ===== Form Card ===== */
 .contact-form {
   width: 100%;
   max-width: 380px;
@@ -677,14 +571,12 @@ section {
   transition: 0.3s;
 }
 
-/* Hover Lift */
 .contact-form:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 25px rgba(0, 188, 212, 0.3);
 }
 
 
-/* ===== Title ===== */
 .contact-form h2 {
   margin-bottom: 25px;
   font-size: 26px;
@@ -692,7 +584,6 @@ section {
 }
 
 
-/* ===== Inputs ===== */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -720,7 +611,6 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Focus Effect */
 .contact-form input:focus,
 .contact-form textarea:focus {
   border: 1px solid #00bcd4;
@@ -728,7 +618,6 @@ section {
 }
 
 
-/* ===== Button ===== */
 .contact-form button {
   width: 100%;
   padding: 12px;
@@ -747,14 +636,12 @@ section {
   transition: 0.3s;
 }
 
-/* Button Hover */
 .contact-form button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(33, 150, 243, 0.6);
 }
 
 
-/* ===== Responsive ===== */
 @media (max-width: 400px) {
   .contact-form {
     margin: 20px;
@@ -763,7 +650,6 @@ section {
 }
 
 
-/* Footer */
 .footer {
   width: 100%;
   padding: 15px 0;
@@ -776,7 +662,6 @@ section {
   color:#00bcd4
 } 
 
-/* Resume part */
 .resume-link {
   position: relative;
   display: inline-flex;
@@ -789,25 +674,21 @@ section {
   transition: 0.3s;
 }
 
-/* Icon hidden initially */
 .resume-link .icon {
   opacity: 0;
   transform: translateX(-10px);
   transition: 0.3s ease;
 }
 
-/* Hover effect */
 .resume-link:hover .icon {
   opacity: 1;
   transform: translateX(0);
 }
 
-/* Text shift on hover */
 .resume-link:hover .text {
   transform: translateX(-2px);
 }
 
-/* Optional underline animation */
 .resume-link::after {
   content: "";
   position: absolute;
@@ -823,14 +704,12 @@ section {
   width: 100%;
 }
 
-/* ===== PROJECT SECTION ===== */
 .projects {
   padding: 80px 10%;
     min-height: 100vh;
 
 }
 
-/* ===== HEADING ===== */
 .my_projects_heading {
   text-align: center;
   margin-bottom: 50px;
@@ -838,14 +717,12 @@ section {
   font-weight: 600;
 }
 
-/* ===== CONTAINER (ONLY THIS IS FLEX) ===== */
 .projects-container {
   display: flex;
   gap: 30px;
-  align-items: stretch; /* equal height */
+  align-items: stretch; 
 }
 
-/* ===== PROJECT CARD ===== */
 .project-card {
   flex: 1;
   background: #111;
@@ -853,39 +730,32 @@ section {
   border-radius: 15px;
   color: #fff;
   transition: 0.3s;
-
-  /* ❌ REMOVE fixed height */
-  /* min-height: 420px; */
-
-  display: flex;
+ display: flex;
   flex-direction: column;
 
-  height: auto; /* 👈 natural height */
+  height: auto; 
 }
 
-/* hover effect */
+
 .project-card:hover {
   transform: translateY(-5px);
 }
 
-/* ===== CONTENT ===== */
 .project-content {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* ===== DESCRIPTION ===== */
 .project-content p {
   margin: 10px 0 15px;
   font-size: 14px;
   line-height: 1.6;
 }
 
-/* ===== HIDDEN DETAILS ===== */
 .project-details,
 .project-details_media {
-  display: none; /* hidden by default */
+  display: none; 
   margin-top: 10px;
 }
 
@@ -900,7 +770,6 @@ section {
   font-size: 15px;
 }
 
-/* ===== TECH TAGS ===== */
 .tech {
   margin-top: 10px;
 }
@@ -914,10 +783,9 @@ section {
   font-size: 15px;
 }
 
-/* ===== BUTTONS ===== */
 .project-buttons,
 .project-buttons_media {
-  margin-top: auto; /* push to bottom */
+  margin-top: auto; 
 }
 
 .btn {
@@ -938,7 +806,6 @@ section {
   border: 1px solid #fff;
 }
 
-/* ===== RESPONSIVE ===== */
 @media(max-width: 1600px){
    .hero {
     padding: 40px 6% 50px;  
@@ -975,12 +842,7 @@ section {
   }
 }
 
-
-
-/* Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
-
-  /* ===== GLOBAL FIX ===== */
   body {
     font-size: 14px;
   }
@@ -989,7 +851,6 @@ section {
     padding: 60px 16px;
   }
 
-  /* ===== NAVBAR ===== */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -997,20 +858,20 @@ section {
   }
 
     .hamburger {
-    display: block;  /* ✅ show only here */
+    display: block; 
     font-size: 28px;
     cursor: pointer;
   }
 
   .nav-links {
-    display: none;   /* hide menu */
+    display: none;  
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
   }
 
   .nav-links.active {
-    display: flex;   /* show on click */
+    display: flex;   
   }
 
   .nav-links a {
@@ -1018,7 +879,6 @@ section {
     font-size: 14px;
   }
 
-  /* ===== HERO ===== */
     .hero {
     padding: 90px 6% 50px;  
     min-height: auto;       
@@ -1045,7 +905,6 @@ section {
     line-height: 1.5;
   }
 
-  /* ===== ANDROID IMAGE FIX (IMPORTANT) ===== */
   .android-image {
     width: 100%;
     max-width: 260px;
@@ -1056,10 +915,9 @@ section {
   .android-image img {
     width: 100%;
     height: auto;
-    transform: none; /* 🔥 MAIN FIX */
+    transform: none;
   }
 
-  /* ===== BUTTONS ===== */
   .buttons {
     flex-direction: column;
     width: 100%;
@@ -1070,7 +928,6 @@ section {
     text-align: center;
   }
 
-  /* ===== PROJECTS ===== */
   .project,
   .project-card {
     flex-direction: column;
@@ -1094,7 +951,6 @@ section {
     font-size: 14px;
   }
 
-  /* ===== TECH TAGS ===== */
   .tech {
     justify-content: center;
   }
@@ -1104,7 +960,6 @@ section {
     padding: 6px 10px;
   }
 
-  /* ===== SKILLS ===== */
   .skills h2 {
     font-size: 28px;
   }
@@ -1113,12 +968,10 @@ section {
     grid-template-columns: 1fr;
   }
 
-  /* ===== CONTACT ===== */
   .contact-form {
     padding: 20px;
   }
 
-  /* ===== FIX OVERFLOW BUGS ===== */
   * {
     max-width: 100%;
   }
@@ -1136,13 +989,11 @@ section {
 
 
 
-  /* MUSIC CARD FIX */
   .music-player-card {
     height: auto !important;
     overflow: visible !important;
   }
 
-   /* ===== PROJECT CARD ===== */
   .project-card {
     display: flex;
     flex-direction: column;
@@ -1151,7 +1002,6 @@ section {
     border-radius: 12px;
   }
 
-  /* ===== CONTENT ===== */
   .project-content {
     width: 100%;
   }
@@ -1168,7 +1018,6 @@ section {
     margin-bottom: 12px;
   }
 
-  /* ===== DETAILS LIST (MAIN FIX) ===== */
   .project-details_media {
     display: none;
     max-height: none;
@@ -1189,9 +1038,6 @@ section {
     margin: 0;
   }
 
-
-
-  /* ===== TECH TAGS ===== */
   .tech {
     display: flex;
     flex-wrap: wrap;
@@ -1205,7 +1051,6 @@ section {
     border-radius: 20px;
   }
 
-  /* ===== BUTTON ===== */
   .project-buttons_media {
     margin-top: 14px;
     width: 100%;
